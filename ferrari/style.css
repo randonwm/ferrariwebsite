@@ -401,6 +401,11 @@ color: #000;
 }
 
 
-element.style {
+.logoimge {
   width: 50px;
+}
+
+.ferrari-logo {
+  height: 24px;   /* Adjust height to match text */
+  width: auto;
 }
