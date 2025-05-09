@@ -17,6 +17,9 @@ body, html {
 }
 
 /* Navbar */
+.navbar-brand{
+  scale: 4px;
+}
 
 
 /* Hero Section */
