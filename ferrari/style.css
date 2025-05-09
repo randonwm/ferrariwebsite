@@ -399,3 +399,8 @@ footer {
 .text-white{
 color: #000;
 }
+
+
+element.style {
+  width: 50px;
+}
