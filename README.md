@@ -1,2 +1,0 @@
-# ferrariwebsite
-school project 
