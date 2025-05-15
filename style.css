@@ -1,0 +1,413 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Inter 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+  
+}
+
+/* Navbar */
+.navbar-brand{
+  scale: 4px;
+}
+
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.5); 
+}
+
+.hero-content {
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  background-color: #d00; 
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero .btn:hover {
+  background-color: #b00;
+}
+
+/* General Styles for Full-Width Image with Overlay Text on Top */
+.container-fluid {
+  position: relative;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Overlay Text on Top of the Image */
+.overlay-text {
+  position: absolute;
+  top: 10%; 
+  left: 5%;
+  width: 40%; 
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.overlay-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+
+.team-member .overlay-text {
+  max-width: 40%; 
+}
+
+
+.team-photo .overlay-text {
+  max-width: 40%; 
+}
+
+
+.history .overlay-text {
+  max-width: 40%; 
+}
+
+
+footer {
+  background: #111;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+
+.container {
+  position: relative;
+}
+
+.car-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
+
+.car-info {
+  background-color: rgba(0, 0, 0, 0.6); 
+  width: 100%;
+  position: absolute;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+.car-info h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.car-info p {
+  font-size: 1rem;
+}
+
+.car-info ul {
+  padding-left: 20px;
+}
+
+.car-info li {
+  margin-bottom: 5px;
+}
+
+
+.cars-section {
+  background-color: #111;
+  color: white;
+}
+
+.cars-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.cars-section .col-md-4 {
+  margin-bottom: 30px;
+}
+
+
+.car-info {
+  top: 20px; 
+  left: 20px; 
+}
+
+.car-info .btn {
+  background-color: #d00;
+  color: white;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-transform: uppercase;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.car-info .btn:hover {
+  background-color: #b00;
+}
+
+
+@media (max-width: 767px) {
+  .car-info {
+    top: 20px;
+    left: 10px;
+    right: 10px;
+  }
+  .car-info h4 {
+    font-size: 1.2rem;
+  }
+  .car-info p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+.hero-machines {
+  background-color: #111;
+  padding: 100px 0 50px;
+}
+
+.car-card {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.car-card img {
+  transition: transform 0.4s ease;
+  width: 100%;
+  height: auto;
+}
+
+.car-card:hover img {
+  transform: scale(1.05);
+}
+
+.car-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.car-card:hover .car-overlay {
+  opacity: 1;
+}
+
+.car-overlay h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+
+.hero-machines {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-machines .hero-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
+  display: block;
+}
+
+.hero-overlay {
+  z-index: 2;
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero-overlay-blur {
+  z-index: 2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
+  display: block;
+}
+
+/* Blurred overlay on top of hero image */
+.hero-overlay-blur {
+  z-index: 2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s 2s, opacity 2s linear; 
+}
+
+.preloader img {
+  width: 150px; 
+  height: auto;
+  animation: spin 2s infinite linear; 
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: #111;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+}
+
+.text-white{
+color: #000;
+}
+
+
+.logoimge {
+  width: 50px;
+}
+
+.ferrari-logo {
+  height: 24px;   
+  width: auto;
+}
+
+

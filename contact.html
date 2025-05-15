@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+  <img src="images/ferrari.png" alt="Ferrari Logo" class="ferrari-logo" />
+  <span class="fw-bold text-uppercase text-white">Ferrari</span>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="machines.html">Machines</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="text-center text-white mb-5">Get in Touch!</h2>
+          <p class="text-center text-white mb-4">Feel Free to Contact Us.</p>
+          
+          <form id="mailto-form">
+            <div class="mb-3">
+              <label for="name" class="form-label text-white">Your Name</label>
+              <input type="text" id="name" class="form-control bg-dark text-white border-secondary" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label text-white">Your Email</label>
+              <input type="email" id="email" class="form-control bg-dark text-white border-secondary" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label text-white">Your Message</label>
+              <textarea id="message" class="form-control bg-dark text-white border-secondary" rows="4" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Send via Email</button>
+          </form>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <img src="images/ferrari logo.png" alt="Ferrari Logo" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<img src="images/Ferrari-joins-forces-with-IBM.webp" alt="">
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white py-3 bg-dark sticky-bottom">
+    © 2025 Scuderia Ferrari. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("mailto-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const subject = encodeURIComponent("Message from " + name);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+
+      // Replace with your actual email address
+      window.location.href = `mailto:mangion233@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
