@@ -35,7 +35,7 @@ body, html {
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: brightness(0.5); /* Darken image for better contrast */
+  filter: brightness(0.5); 
 }
 
 .hero-content {
@@ -57,7 +57,7 @@ body, html {
 .hero .btn {
   font-size: 1.2rem;
   padding: 12px 30px;
-  background-color: #d00; /* Ferrari Red */
+  background-color: #d00; 
   border-radius: 50px;
   font-weight: bold;
   text-transform: uppercase;
@@ -82,12 +82,12 @@ img {
 /* Overlay Text on Top of the Image */
 .overlay-text {
   position: absolute;
-  top: 10%; /* Position from the top of the image */
-  left: 5%; /* Keep text on the left */
-  width: 40%; /* Text box width */
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  top: 10%; 
+  left: 5%;
+  width: 40%; 
+  background-color: rgba(0, 0, 0, 0.6); 
   color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
   padding: 20px;
   border-radius: 10px;
 }
@@ -103,22 +103,22 @@ img {
   line-height: 1.5;
 }
 
-/* Specific Adjustments for the Fred Vasseur Section */
+
 .team-member .overlay-text {
-  max-width: 40%; /* Keeps text within the left side of the image */
+  max-width: 40%; 
 }
 
-/* Specific Adjustments for the Team Photo Section */
+
 .team-photo .overlay-text {
-  max-width: 40%; /* Keeps text within the left side of the image */
+  max-width: 40%; 
 }
 
-/* Specific Adjustments for the Ferrari History Section */
+
 .history .overlay-text {
-  max-width: 40%; /* Keeps text within the left side of the image */
+  max-width: 40%; 
 }
 
-/* Footer */
+
 footer {
   background: #111;
   padding: 1.5rem;
@@ -127,7 +127,7 @@ footer {
   color: #aaa;
 }
 
-/* General Styles for Full-Width Image with Overlay Text */
+
 .container {
   position: relative;
 }
@@ -145,12 +145,12 @@ footer {
 }
 
 .car-info {
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.6); 
   width: 100%;
   position: absolute;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow at the top of the overlay */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); 
 }
 
 .car-info h4 {
@@ -171,7 +171,7 @@ footer {
   margin-bottom: 5px;
 }
 
-/* Section Styles */
+
 .cars-section {
   background-color: #111;
   color: white;
@@ -187,10 +187,10 @@ footer {
   margin-bottom: 30px;
 }
 
-/* Position text at the corner */
+
 .car-info {
-  top: 20px; /* Position the text 20px from the top */
-  left: 20px; /* Position the text 20px from the left */
+  top: 20px; 
+  left: 20px; 
 }
 
 .car-info .btn {
@@ -299,9 +299,9 @@ footer {
 .hero-overlay-blur {
   z-index: 2;
   color: white;
-  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent dark bg */
-  backdrop-filter: blur(10px); /* actual blur */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  background-color: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
 }
 
@@ -336,23 +336,23 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+  background-color: rgba(0, 0, 0, 0.7); 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Ensure it stays above other elements */
+  z-index: 9999; 
   visibility: visible;
   opacity: 1;
-  transition: visibility 0s 2s, opacity 2s linear; /* Fade out the preloader after content loads */
+  transition: visibility 0s 2s, opacity 2s linear; 
 }
 
 .preloader img {
-  width: 150px; /* Ferrari horse logo size */
+  width: 150px; 
   height: auto;
-  animation: spin 2s infinite linear; /* Animation to make the logo spin */
+  animation: spin 2s infinite linear; 
 }
 
-/* Preloader Spin Animation */
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -406,7 +406,7 @@ color: #000;
 }
 
 .ferrari-logo {
-  height: 24px;   /* Adjust height to match text */
+  height: 24px;   
   width: auto;
 }
 
